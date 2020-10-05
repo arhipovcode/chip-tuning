@@ -1,0 +1,162 @@
+.header
+  padding-top: 30px
+  padding-bottom: 180px
+  background: url(../images/header/mainBG.jpg) no-repeat
+  background-size: cover
+  background-position: center center
+  color: $textHead
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 12px
+  &-logo
+    display: flex
+    align-items: flex-end
+    &__text
+      margin-left: 40px
+      span
+        font-size: 11px
+        line-height: 18px
+        display: block
+  &-messenger
+    text-align: center
+    &-text
+      margin-bottom: 16px
+    &-wrapper_link
+      display: inline-block
+      transition: 0.2s
+  &__link
+    display: flex
+    align-items: center
+    font-size: 11px
+    padding: 6px 12px
+    background-color: rgba(0, 0, 0, 0.5)
+    border-radius: 10px
+    &:hover
+      color: #fff
+      &.whatsapp
+        background-color: #83bf69
+      &.viber
+        background-color: #7663ab
+      &.telegram
+        background-color: #668fcc
+    img
+      width: 12px
+      margin-right: 7px
+  &-contacts
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    &-wrapper
+      text-align: center
+      &:nth-child(2)
+        margin: 0 50px
+    &__title
+      margin-bottom: 13px
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        width: 12px
+        margin-right: 8px
+    &__text
+      span
+        display: block
+        line-height: 18px
+    &__phone
+      margin-top: 18px
+      +textGradient
+      font-size: 18px
+      display: block
+      +bold
+      &:hover
+        +hoverGradient
+.viber
+  margin: 0 11px
+
+.header-logo__text,
+.header-messenger-text,
+.header-contacts__title
+  +light
+
+.header__link,
+.header-contacts__text
+  +medium
+
+// header-main
+.header
+  &-main
+    display: flex
+    margin-top: 77px
+    &-sub
+      font-size: 14px
+      color: $gray
+      +light
+    &-title
+      font-size: 50px
+      margin: 34px 0 27px 0
+      line-height: 40px
+    &-desc
+      +regular
+      font-size: 22px
+      color: #fff
+      margin-bottom: 57px
+      span
+        +textGradient
+        +bold
+        font-size: 30px
+    &-items
+      display: flex
+      align-items: center
+      &-block
+        display: flex
+        align-items: center
+        margin-right: 33px
+        &:last-child
+          margin-right: 0
+        span
+          display: block
+          +regular
+          color: $gray
+          font-size: 12px
+          margin-left: 10px
+  &-form
+    text-align: center
+    color: #fff
+    display: flex
+    flex-direction: column
+    padding: 45px 55px 40px 55px
+    max-width: 380px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../images/header/lens-flare.png)
+    border-radius: 10px
+    margin-left: 107px
+    &-title
+      font-size: 16px
+      +bold
+      margin-bottom: 28px
+    &-calculation
+      margin: 15px 0
+      font-size: 14px
+      +medium
+  &-input
+    margin-bottom: 16px
+    border-radius: 20px
+    width: 100%
+    padding: 12px 22px
+    &::placeholder
+      font-size: 12px
+      +light
+      color: #000
+  &-btn
+    position: relative
+    margin-top: 23px
+    width: 100%
+    text-align: left
+    img
+      position: absolute
+      top: -50px
+      right: 10px
