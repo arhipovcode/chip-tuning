@@ -436,6 +436,35 @@ input {
   border: none;
 }
 
+.header-logo__text,
+.header__link {
+  font-size: 11px;
+}
+
+.header-input::-webkit-input-placeholder,
+.header-wrapper,
+.items_text {
+  font-size: 12px;
+}
+
+.header-input:-ms-input-placeholder,
+.header-wrapper,
+.items_text {
+  font-size: 12px;
+}
+
+.header-input::-ms-input-placeholder,
+.header-wrapper,
+.items_text {
+  font-size: 12px;
+}
+
+.header-input::placeholder,
+.header-wrapper,
+.items_text {
+  font-size: 12px;
+}
+
 .header {
   padding-top: 30px;
   padding-bottom: 180px;
@@ -455,7 +484,6 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
 }
 
 .header-logo {
@@ -472,7 +500,6 @@ input {
 }
 
 .header-logo__text span {
-  font-size: 11px;
   line-height: 18px;
   display: block;
 }
@@ -498,7 +525,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 11px;
   padding: 6px 12px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -606,6 +632,9 @@ input {
   display: -ms-flexbox;
   display: flex;
   margin-top: 77px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-main-sub {
@@ -616,8 +645,8 @@ input {
 
 .header-main-title {
   font-size: 50px;
-  margin: 34px 0 27px 0;
-  line-height: 40px;
+  margin: 25px 0 15px 0;
+  line-height: 60px;
 }
 
 .header-main-desc {
@@ -663,7 +692,6 @@ input {
   display: block;
   font-family: 'MullerRegular', sans-serif;
   color: #989898;
-  font-size: 12px;
   margin-left: 10px;
 }
 
@@ -684,7 +712,6 @@ input {
   background-size: cover;
   background-image: url(../images/header/lens-flare.png);
   border-radius: 10px;
-  margin-left: 107px;
 }
 
 .header-form-title {
@@ -707,25 +734,21 @@ input {
 }
 
 .header-input::-webkit-input-placeholder {
-  font-size: 12px;
   font-family: 'MullerLight', sans-serif;
   color: #000;
 }
 
 .header-input:-ms-input-placeholder {
-  font-size: 12px;
   font-family: 'MullerLight', sans-serif;
   color: #000;
 }
 
 .header-input::-ms-input-placeholder {
-  font-size: 12px;
   font-family: 'MullerLight', sans-serif;
   color: #000;
 }
 
 .header-input::placeholder {
-  font-size: 12px;
   font-family: 'MullerLight', sans-serif;
   color: #000;
 }
@@ -766,16 +789,15 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 80px;
 }
 
 .services-wrapper-block {
-  padding: 31px 8px 31px 31px;
+  padding: 27px 8px 25px 25px;
   border-radius: 20px;
-  max-width: 360px;
+  max-width: 24%;
   -webkit-box-shadow: 0 0 40px rgba(114, 114, 114, 0.1);
           box-shadow: 0 0 40px rgba(114, 114, 114, 0.1);
   background-color: #ffffff;
@@ -784,15 +806,17 @@ input {
 .services-wrapper-block .block-title {
   font-size: 24px;
   font-weight: 400;
+  min-height: 54px;
   font-family: 'MullerBold', sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .services-wrapper-block .block-text {
   font-family: 'MullerRegular', sans-serif;
   font-size: 14px;
+  min-height: 80px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .services-wrapper-block .block-link {
@@ -890,21 +914,177 @@ a {
   }
 }
 
+@media (max-width: 1320px) {
+  .container {
+    width: 98%;
+  }
+  .header-logo__text {
+    display: none;
+  }
+  .header-main-title {
+    font-size: 40px;
+    margin: 18px 0 10px 0;
+    line-height: 47px;
+  }
+  .header-main-desc {
+    margin-bottom: 25px;
+  }
+  .header-main-items-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-main-items-block img {
+    margin-bottom: 20px;
+  }
+  .services-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .services-wrapper-block {
+    max-width: 40%;
+    margin-bottom: 20px;
+  }
+  .services-wrapper-block:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .services-wrapper-block:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .services-wrapper-block .block-title,
+  .services-wrapper-block .block-text {
+    min-height: inherit;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 98%;
+  }
+  .header-main-title {
+    line-height: 40px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .services-wrapper-block {
+    padding: 20px 15px 16px 15px;
+  }
+  .services-wrapper-block .block-text {
+    min-height: 64px;
+  }
+  .services-wrapper-block .block-title {
+    font-size: 23px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    width: 960px;
+    width: 97%;
   }
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 720px;
+  .header {
+    padding-bottom: 80px;
+    background-position: left center;
+  }
+  .header-logo__img img {
+    width: 80%;
+  }
+  .header-messenger-text {
+    display: none;
+  }
+  .header-messenger-wrapper_link span {
+    display: none;
+  }
+  .header-messenger-wrapper_link img {
+    margin-right: 0;
+    width: 18px;
+  }
+  .header-contacts-wrapper:nth-child(2) {
+    margin: 0 30px;
+  }
+  .header__link {
+    padding: 8px;
+  }
+  .header-form {
+    padding: 35px 35px 40px 35px;
+    max-width: 305px;
+  }
+  .header-form-title {
+    font-size: 15px;
+  }
+  .header-input {
+    border-radius: 16px;
+    padding: 10px 22px;
+  }
+  .header-btn {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .header-btn img {
+    display: none;
+  }
+  .header-main-title {
+    line-height: 37px;
+  }
+  .header-main-desc {
+    font-size: 21px;
+  }
+  .header-main-desc span {
+    font-size: 24px;
+  }
+  .header-main-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-filter: drop-shadow(2px 2px 6px black);
+            filter: drop-shadow(2px 2px 6px black);
+  }
+  .header-main-items-block {
+    margin-right: 0;
+    margin-bottom: 12px;
+    width: 40%;
+  }
+  .header-main-items-block span {
+    color: #fff;
+  }
+  .title {
+    font-size: 27px;
+  }
+  .button {
+    padding: 17px 21px;
+  }
+  .viber {
+    margin: 5px;
+  }
+  .services {
+    background-position: -440px center;
+    padding: 60px 0 100px 0;
+  }
+  .services-wrapper {
+    margin-bottom: 50px;
+  }
+  .services-wrapper-block {
+    padding: 20px 15px 16px 15px;
+  }
+  .services-wrapper-block .block-text {
+    min-height: 80px;
+  }
+  .services-wrapper-block .block-title {
+    font-size: 20px;
+    min-height: 46px;
+    margin-bottom: 10px;
+  }
+  .services-content-title {
+    max-width: 550px;
+    margin-bottom: 24px;
+  }
+  .services-content-auto {
+    font-size: 25px;
+  }
+  .services-content-desc {
+    margin-bottom: 20px;
   }
 }
 

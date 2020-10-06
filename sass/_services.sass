@@ -13,24 +13,26 @@
   &-wrapper
     display: flex
     justify-content: space-between
-    align-items: center
+    flex-wrap: wrap
     margin-bottom: 80px
     &-block
-      padding: 31px 8px 31px 31px
+      padding: 27px 8px 25px 25px
       border-radius: 20px
-      max-width: 360px
+      max-width: 24%
       box-shadow: 0 0 40px rgba(114, 114, 114, 0.1)
       background-color: #ffffff
       & .block-title
         font-size: 24px
         font-weight: 400
+        min-height: 54px
         +bold
-        margin-bottom: 20px
+        margin-bottom: 17px
       & .block-text
         +regular
         font-size: 14px
+        min-height: 80px
         font-weight: 400
-        margin-bottom: 40px
+        margin-bottom: 25px
       & .block-link
         +textGradient
         &:hover
