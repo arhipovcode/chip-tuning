@@ -1,3 +1,65 @@
 @media (max-width: 768px)
   .container
-    
+  .header
+    &-wrapper
+      position: relative
+    &-messenger
+      position: absolute
+      top: 100%
+      left: 50%
+      transform: translateX(-50%)
+    &-contacts
+      align-items: center
+      &__phone,
+      &__title
+        display: none
+        &-img img
+          display: block
+    &-form
+      max-width: 280px
+      padding: 25px 25px 25px 25px
+      &-title
+        margin-bottom: 20px
+      &-calculation
+        margin-top: 0
+    &-btn
+      margin-top: 8px
+    &-input
+      padding: 8px 14px
+    &-main
+      &-items
+        align-items: baseline
+        &-block
+          img
+            margin-bottom: 15px
+          &:nth-child(3) img
+            margin-left: 15px
+      &-content
+        max-width: 49%
+      &-title
+        line-height: 32px
+        margin: 15px 0 8px 0
+      &-desc
+        font-size: 18px
+        span
+          font-size: 20px
+      &-items
+        &-block
+          width: 50%
+          text-align: center
+  .title
+    font-size: 24px
+
+  .services
+    background-position: right -50px
+    &-title
+      margin: 0 auto 58px
+      max-width: 400px
+    &-wrapper
+      &-block
+        max-width: 47%
+        .block-text
+          min-height: 96px
+    &-content
+      &-title
+        filter: drop-shadow(2px 4px 6px white)
