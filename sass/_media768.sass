@@ -4,10 +4,15 @@
     &-wrapper
       position: relative
     &-messenger
-      position: absolute
-      top: 100%
-      left: 50%
-      transform: translateX(-50%)
+      // position: absolute
+      // top: 100%
+      // left: 50%
+      // transform: translateX(-50%)
+    &-logo
+      &__img
+        max-width: 100px
+    &__link
+      padding: 2px
     &-contacts
       align-items: center
       &__phone,
@@ -15,6 +20,8 @@
         display: none
         &-img img
           display: block
+      &-wrapper:nth-child(2)
+        margin: 0 20px
     &-form
       max-width: 280px
       padding: 25px 25px 25px 25px
@@ -63,3 +70,55 @@
     &-content
       &-title
         filter: drop-shadow(2px 4px 6px white)
+
+  .power
+    &-wrapper
+      flex-wrap: wrap
+      margin-top: 50px
+      &-block:nth-child(2), 
+      &-block:nth-child(3)
+        margin-top: 0
+      &-block
+        margin-bottom: 25px
+        .block-item-img
+          margin-bottom: 0
+
+  .factory
+    &-wrapper
+      &-content
+        .content-block
+          flex-direction: column
+          &-text
+            margin-right: 0
+            margin-bottom: 12px
+            line-height: 21px
+            max-width: 500px
+            text-align: center
+          &-img
+            max-width: 90%
+            margin: 0 auto
+      &-cause
+        .cause-block
+          width: 46%
+          min-height: 120px
+          overflow: hidden
+          &-text
+            margin-left: 4%
+          &-text p
+              font-size: 15px
+          &-img
+            min-width: 100px
+            margin-left: -10px
+    &-subtitle
+      font-size: 20px
+
+  .section-form
+    padding: 60px 0
+    &-wrapper
+      flex-direction: column
+      text-align: center
+    &-title
+      margin: 0 auto 50px
+      max-width: 400px
+    .header-form
+      margin: 0 auto

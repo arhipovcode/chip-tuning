@@ -1,7 +1,8 @@
 @media (max-width: 476px)
   .container
   .title
-    font-size: 21px
+    font-size: 18px
+    line-height: 24px
   .header
     &-logo
       &__img
@@ -30,3 +31,28 @@
         p
           max-width: 270px
           margin: 0 auto
+
+  .factory
+    &-subtitle
+      font-size: 17px
+    &-wrapper
+      &-content
+        margin-bottom: 30px
+        .content-block
+          &-text
+            font-size: 14px
+          &-img
+            max-width: 95%
+    &-block
+      &-info
+        overflow: hidden
+        background-size: cover
+        padding: 15px
+        p
+          z-index: 1
+          filter: drop-shadow(2px 4px 6px black)
+        img
+          position: absolute
+          transform: scale(0.6)
+          z-index: 0
+          right: -70px
