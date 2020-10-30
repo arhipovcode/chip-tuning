@@ -1,8 +1,138 @@
 .result
   padding-top: 87px
+  padding-bottom: 35px
+  background-image: url(../images/result/motor.jpg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: right
   &-title
     font-size: 40px
     text-align: center
     max-width: 700px
-    margin: 0 auto 92px
+    margin: 0 auto 80px
     color: $black
+  &-wrapper
+    display: flex
+    justify-content: center
+  &-block
+    &-left
+      margin-right: 125px
+      img
+        display: block
+        max-width: 640px
+      .block-left
+        &-title
+          +black
+          font-size: 24px
+          font-weight: 400
+          text-transform: uppercase
+          margin-bottom: 40px
+        &-desc
+          display: flex
+          span
+            width: 43px
+            height: 2px
+            +blockGradientYellow
+            display: inline-block
+            margin-right: 25px
+            margin-top: 8px
+          p
+            +regular
+            font-size: 18px
+            font-weight: 400
+            max-width: 500px
+            margin-bottom: 44px
+    &-right
+      .block-right
+        &-wrap-btn
+          display: flex
+          box-shadow: 0 0 20px rgba(197, 5, 0, 0.1)
+          border-radius: 25px
+          margin-bottom: 99px
+          width: 120px
+          .res-left__btn
+            border-radius: 25px 0 0 25px
+            &:before
+              transform: rotate(180deg) translateY(50%)
+              left: 20px
+          .res-right__btn
+            border-radius: 0 25px 25px 0
+            &:before
+              right: 20px
+        &-characteristics
+          margin-bottom: 43px
+          p
+            +bold
+            font-size: 18px
+            font-weight: 400
+            margin-bottom: 27px
+          &__info
+            +regular
+            font-size: 12px
+            font-weight: 400
+            .to:before,
+            .to-center:before
+              content: ''
+              display: block
+              position: absolute
+              width: 2px
+              height: 43px
+              right: 25px
+              top: 50%
+              transform: translateY(-55%)
+              +blockGradientYellow
+            .to-center:before
+              background-color: $red
+            .after:before,
+            .after-center:before
+              content: ''
+              background-image: url(../images/result/arrow-top.png)
+              display: block
+              position: absolute
+              width: 10px
+              height: 42px
+              right: 21px
+              top: 50%
+              transform: translateY(-55%)
+            .after-center:before
+              transform: translateY(-55%) rotate(180deg)
+            span
+              position: relative
+              &:nth-child(3)
+                +textGradientInfo
+                font-size: 18px
+                font-weight: 400
+                +bold
+              b
+                font-size: 24px
+                +medium
+                margin-left: 19px
+                margin-right: 54px
+
+  .result-btn
+    margin-top: 10px
+  .result-arrow-btn
+    position: relative
+    outline: none
+    border: none
+    background-color: $btn-bg
+    font-size: 12px
+    cursor: pointer
+    padding: 20px 22px
+    transition: 0.5s
+    width: 60px
+    height: 45px
+    &:hover
+      background-color: $red
+      &:before
+        filter: brightness(2)
+    &:before
+      content: ''
+      position: absolute
+      transform: translateY(-50%)
+      top: 50%
+      display: block
+      background-image: url(../images/result/arrow.png)
+      width: 9px
+      height: 15px
+      transition: 0.5s

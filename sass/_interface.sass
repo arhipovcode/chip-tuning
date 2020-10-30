@@ -17,6 +17,7 @@ p
 
 // Настройки кнопок
 .button
+  position: relative
   +black
   outline: none
   border: none
@@ -34,5 +35,12 @@ p
 
 // Настройки инпутов
 input
+  position: relative
   outline: none
   border: none
+  &::placeholder
+    font-size: 12px
+    +light
+    color: #000000
+.input-select::placeholder
+  background: url(../images/cost/arrow-down.png) no-repeat right
