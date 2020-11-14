@@ -2,7 +2,6 @@
   padding-top: 86px
   padding-bottom: 52px
   background: url(../images/questions/bg-questions.png) no-repeat top right
-  height: 950px
   overflow: hidden
   &-title
     text-align: center
@@ -17,15 +16,19 @@
     img
       display: block
       margin-top: -150px
+      width: 100%
   &-tab-item
     margin-bottom: 12px
   &-tab-head
     position: relative
     +medium
+    display: flex
+    align-items: center
     font-size: 16px
     max-width: 745px
     max-height: 89px
-    padding: 27px 93px
+    min-height: 67px
+    padding: 10px 90px
     box-shadow: 0 20px 40px rgba(114, 114, 114, 0.05)
     border-radius: 10px
     border: 1px solid #999999

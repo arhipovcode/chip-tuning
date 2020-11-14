@@ -23,8 +23,8 @@
       &-wrapper:nth-child(2)
         margin: 0 20px
     &-form
-      max-width: 280px
-      padding: 25px 25px 25px 25px
+      max-width: 300px
+      padding: 25px 30px 25px 30px
       &-title
         margin-bottom: 20px
       &-calculation
@@ -112,6 +112,58 @@
     &-subtitle
       font-size: 20px
 
+  .result
+    &-title
+      margin-bottom: 40px
+      max-width: 500px
+    &-wrapper
+      flex-direction: column
+    &-block
+      &-left
+        width: 90%
+        margin: 0 auto 30px
+        .block-left-title
+          text-align: center
+          margin-bottom: 20px
+          font-size: 19px
+        .block-left-desc p
+          font-size: 16px
+          margin-bottom: 20px
+      &-right
+        width: 100%
+        .block-right-wrap-btn
+          margin: 0 auto 30px
+        .block-right-characteristics
+          display: flex
+          justify-content: space-between
+          max-height: 30px
+          p
+            margin-bottom: 0
+            font-size: 16px
+          &__info
+            max-width: 316px
+            span:nth-child(3)
+              font-size: 16px
+            span b
+              margin-left: 15px
+              margin-right: 40px
+            .to:before
+              height: 30px
+              right: 15px
+            .to-center:before
+              right: 17px
+              height: 30px
+            .after:before,
+            .after-center:before
+              height: 30px
+              right: 14px
+            .after-center:before
+              right: 15px
+    &-btn
+      margin: 0 auto
+      display: block
+  
+
   .section-form
     padding: 60px 0
     &-wrapper
@@ -122,3 +174,78 @@
       max-width: 400px
     .header-form
       margin: 0 auto
+
+  .cost
+    &-form
+      padding: 30px 40px 40px 40px
+      max-width: 300px
+      span
+        display: block
+        font-size: 17px
+        margin-top: 3px
+      &-title
+        margin-bottom: 25px
+
+  .faq
+    padding: 60px 0
+    &-wrapper
+      justify-content: center
+    &-tab-item
+      width: 80%
+      margin: 0 auto 12px
+    &-tab-head
+      padding: 10px 40px
+    &-image
+      &-block
+        display: none
+        margin-right: 0
+
+  .test
+    &-drive
+      background-size: cover
+      &-btn
+        padding: 12px 20px
+      &-form
+        margin: 30px auto 50px
+        padding: 30px 35px 30px 35px
+        max-width: 300px
+        &-content
+          font-size: 14px
+      &-title
+        text-align: center
+        max-width: 360px
+        margin: auto
+        margin-bottom: 30px
+        span
+          justify-content: center
+          &:before
+            display: none
+      &-wrapper
+        justify-content: center
+        flex-direction: column
+      &-content
+        margin-right: 0
+        width: 100%
+
+  .map-block
+    #map
+      height: 500px
+    &-messenger
+      flex-direction: column
+      align-items: flex-start
+    &-contacts
+      left: 0
+      padding: 40px 30px 0 30px
+      &-item
+        margin-bottom: 25px
+        max-width: 250px
+        font-size: 15px
+        span
+          margin-bottom: 6px
+        &_text
+          margin-left: 10px
+  .map
+    .container
+      max-width: 310px
+    .map-viber
+      margin: 5px 0
