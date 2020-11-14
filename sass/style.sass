@@ -3,21 +3,13 @@
 @import 'vars'
 @import 'mixin'
 @import 'interface'
-@import 'header'
-@import 'services'
-@import 'power'
-@import 'factory'
-@import 'section-form'
-@import 'result'
-@import 'cost'
-@import 'guarantee'
-@import 'questions'
 
 *,
 *:after,
 *:before
   box-sizing: border-box
 .container
+  position: relative
   width: 1560px
   margin: 0 auto
 a
@@ -27,6 +19,21 @@ a
   transition: 0.5s
 body
   font-weight: 400
+  +regular
+
+@import 'header'
+@import 'services'
+@import 'power'
+@import 'factory'
+@import 'section-form'
+@import 'result'
+@import 'cost'
+@import 'guarantee'
+@import 'questions'
+@import 'test-drive'
+@import 'contacts'
+@import 'map'
+@import 'footer'
 
 @import 'media1560'
 @import 'media1320'
