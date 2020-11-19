@@ -1,6 +1,5 @@
 .faq
   padding-top: 86px
-  padding-bottom: 52px
   background: url(../images/questions/bg-questions.png) no-repeat top right
   overflow: hidden
   &-title
@@ -16,9 +15,16 @@
     img
       display: block
       margin-top: -150px
+      margin-bottom: -250px
       width: 100%
   &-tab-item
+    position: relative
     margin-bottom: 12px
+    &__img
+      position: absolute
+      height: 67px
+      left: 0
+      z-index: 1
   &-tab-head
     position: relative
     +medium
@@ -34,6 +40,9 @@
     border: 1px solid #999999
     background-color: #ffffff
     cursor: pointer
+    transition: 0.2s
+    &:hover
+        background-color: #ffecec
     &:after
       content: ''
       display: block

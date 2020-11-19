@@ -34,3 +34,20 @@ function hideBlock(block, index) {
   tabBlockVisible[index].style.maxHeight = 0;
   tabBlockVisible[index].classList.remove('hidden-block-active'); 
 }
+
+const causeItems = document.querySelectorAll('.cause-block'),
+      contentBlocks = document.querySelectorAll('.content-block');
+
+causeItems.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    if(item.classList.contains('cause-block-active')) {
+      return;
+    }
+    for(let i = 0; i < causeItems.length; i++) {
+      causeItems[i].classList.remove('cause-block-active');
+      contentBlocks[i].classList.remove('content-block-active');
+    }
+    causeItems[index].classList.add('cause-block-active');
+    contentBlocks[index].classList.add('animated', 'fadeIn', 'content-block-active');
+  });
+});

@@ -14,6 +14,7 @@
   &-wrapper
     display: flex
     justify-content: center
+    outline: none
   &-block
     &-left
       margin-right: 125px
@@ -22,6 +23,12 @@
         max-width: 640px
         width: 100%
       .block-left
+        &-avto-image
+          max-width: 640px
+          border-radius: 30px
+          overflow: hidden
+          img
+            width: 100%
         &-title
           +black
           font-size: 24px
@@ -44,12 +51,18 @@
             max-width: 500px
             margin-bottom: 44px
     &-right
+      position: relative
+      align-self: flex-end
       .block-right
+        &-content
+          margin-top: 90px
         &-wrap-btn
+          position: absolute
+          top: 0
+          left: 0
           display: flex
           box-shadow: 0 0 20px rgba(197, 5, 0, 0.1)
           border-radius: 25px
-          margin-bottom: 99px
           width: 120px
           .res-left__btn
             border-radius: 25px 0 0 25px
