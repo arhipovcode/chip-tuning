@@ -662,6 +662,43 @@ input::placeholder {
   background: url(../images/cost/arrow-down.png) no-repeat right;
 }
 
+.select {
+  position: relative;
+  width: 100%;
+}
+
+.select select {
+  width: 100%;
+  min-height: 42px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  padding: 12px 22px;
+  font-size: 12px;
+  font-family: 'MullerLight', sans-serif;
+  color: #000000;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.select:after {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: calc(50% - 8px);
+  right: 22px;
+  background: url(../images/cost/arrow-down.png) no-repeat right;
+  pointer-events: none;
+  width: 12px;
+  height: 8px;
+  z-index: 1000;
+}
+
 *,
 *:after,
 *:before {

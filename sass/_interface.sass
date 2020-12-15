@@ -45,3 +45,33 @@ input
     color: #000000
 .input-select::placeholder
   background: url(../images/cost/arrow-down.png) no-repeat right
+
+// Настройки select
+.select
+  position: relative
+  width: 100%
+  select
+    width: 100%
+    min-height: 42px 
+    margin-bottom: 16px
+    border-radius: 20px
+    padding: 12px 22px
+    font-size: 12px
+    +light
+    color: #000000
+    border: none
+    outline: none
+    background-color: #fff
+    appearance: none
+    cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    transform: translateY(-50%)
+    top: calc(50% - 8px)
+    right: 22px
+    background: url(../images/cost/arrow-down.png) no-repeat right
+    pointer-events: none
+    width: 12px
+    height: 8px
+    z-index: 1000
