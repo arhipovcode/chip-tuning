@@ -73,4 +73,6 @@ function getModel(auto, blockModel) {
 
 getAuto();
 
-// const carModel = ['audi', 'bmw', 'cadillac', 'chery', 'chevrolet', 'citroen', 'daewoo', 'dodge', 'fiat', 'ford', 'gelly', 'greate Wall', 'honda', 'hyundai', 'infinity', 'jaguar', 'jeep', 'kia', 'land Rover', 'lexus', 'lifan', 'mazda', 'mercedes Benz', 'mini', 'mitsubishi', 'nissan', 'opel', 'peugeot', 'porshe', 'renault', 'saab', 'seat', 'skoda', 'ssang Yong', 'subaru', 'suzuki', 'toyota', 'volkswagen', 'volvo'];
+// Маска для телефона
+let inputsPhone = document.querySelectorAll('input[name="phone"]');
+$(inputsPhone).mask("+7 (999) 99-99-999");

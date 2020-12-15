@@ -673,7 +673,7 @@ input::placeholder {
   margin-bottom: 16px;
   border-radius: 20px;
   padding: 12px 22px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'MullerLight', sans-serif;
   color: #000000;
   border: none;
@@ -2801,6 +2801,9 @@ body {
   }
   .map-block-contacts {
     left: -1.5%;
+  }
+  .select select {
+    font-size: 12px;
   }
 }
 

@@ -198,10 +198,10 @@
             <!-- <input type="text" class="header-input input-select" placeholder="Выберите вид топлива"> -->
 
             <div class="header-form-calculation">
-              Как удобнее получить расчет?
+              Запишитесь на чип тюнинг:
             </div>
-            <input type="text" class="header-input input-whatsapp input-select" placeholder="Отправить в WhatsApp">
-            <input type="text" class="header-input" placeholder="Введите Ваш телефон">
+            <!-- <input type="text" class="header-input input-whatsapp input-select" placeholder="Отправить в WhatsApp"> -->
+            <input id="maskPhone" type="text" class="header-input" name="phone" placeholder="Введите Ваш телефон">
             <button class="button header-btn">
               Рассчитать прирост
               <img src="images/header/clipboard.png" alt="Рассчитать стоимость">
@@ -623,10 +623,10 @@
               </div>
   
               <div class="header-form-calculation">
-                Как удобнее получить расчет?
+                Запишитесь на чип тюнинг:
               </div>
-              <input type="text" class="header-input input-whatsapp input-select input-select" placeholder="Отправить в WhatsApp">
-              <input type="text" class="header-input" placeholder="Введите Ваш телефон">
+              <!-- <input type="text" class="header-input input-whatsapp input-select input-select" placeholder="Отправить в WhatsApp"> -->
+              <input type="text" class="header-input" name="phone" placeholder="Введите Ваш телефон">
               <button class="button header-btn">
                 Рассчитать прирост
                 <img src="images/header/clipboard.png" alt="Рассчитать стоимость">
@@ -835,7 +835,7 @@
               </select>
             </div>
 
-            <input type="text" class="cost-input" placeholder="Введите Ваш телефон">
+            <input type="text" class="cost-input" name="phone" placeholder="Введите Ваш телефон">
             <button class="button cost-btn">
               Получить прайс
               <img src="images/cost/Clipboard-Office.png" alt="Получить прайс">
@@ -1165,8 +1165,8 @@
                   <option value="Дизель">Дизель</option>
                 </select>
               </div>
-              
-              <input type="text" class="test-drive-input" placeholder="Введите Ваш телефон">
+
+              <input type="text" class="test-drive-input" name="phone" placeholder="Введите Ваш телефон">
               <button class="button test-drive-btn">
                 Попробовать<br>чип тюнинг бесплатно
               </button>
@@ -1303,6 +1303,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/tab.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/mySlick.js"></script>
