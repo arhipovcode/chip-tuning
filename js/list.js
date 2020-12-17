@@ -1,5 +1,6 @@
 let selectAutos = document.querySelectorAll('select[name="auto"]');
 let selectModels = document.querySelectorAll('select[name="model"]');
+let inputsFuel = document.querySelectorAll('select[name="fuel"]');
 
 const avtoObj = {
   audi: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Q3', 'Q5', 'Q7', 'TT'],
@@ -65,9 +66,9 @@ function getModel(auto, blockModel) {
   }
   for(let i = 0; i < avtoObj[auto].length; i++) {
     let option = document.createElement('option');
-      blockModel.appendChild(option);
-      option.value = avtoObj[auto][i];
-      option.textContent = avtoObj[auto][i];
+    option.value = avtoObj[auto][i];
+    option.textContent = avtoObj[auto][i];
+    blockModel.appendChild(option);
   }
 }
 
@@ -76,3 +77,19 @@ getAuto();
 // Маска для телефона
 let inputsPhone = document.querySelectorAll('input[name="phone"]');
 $(inputsPhone).mask("+7 (999) 99-99-999");
+
+// Кнопка отправки формы
+let btnsSubmit = document.querySelectorAll('.form-btn');
+
+for(let i = 0; i < btnsSubmit.length; i++) {
+  btnsSubmit[i].addEventListener('click', (e) => {
+    e.preventDefault();
+    let target = e.target;
+
+    if(selectAutos[i].value == selectAutos[i][0].value || selectModels[i].value == selectModels[i][0].value || inputsFuel[i].value == inputsFuel[i][0].value || inputsPhone[i].value == '') {
+      console.log('Заполните поле')
+    } else {
+      console.log('все прошло успешно')
+    }
+  });
+}
