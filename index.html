@@ -138,7 +138,10 @@
 
             <!-- <input type="text" class="header-input input-select" placeholder="Выберите марку автомобиля"> -->
             <div class="select">
-              <select name="auto">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <select class="sel" name="auto">
                 <option selected disabled>Выберите марку автомобиля</option>
                 <option value="Audi">Audi</option>
                 <option value="BMW">BMW</option>
@@ -183,13 +186,19 @@
               </select>
             </div>
             <div class="select">
-              <select disabled name="model">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <select class="sel" disabled name="model">
                 <option selected disabled>Выберите модель</option>
               </select>
             </div>
             <!-- <input type="text" class="header-input input-select" placeholder="Выберите модель"> -->
             <div class="select">
-              <select name="fuel">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <select class="sel" name="fuel">
                 <option selected disabled>Выберите вид топлива</option>
                 <option value="Бензин">Бензин</option>
                 <option value="Дизель">Дизель</option>
@@ -201,7 +210,12 @@
               Запишитесь на чип тюнинг:
             </div>
             <!-- <input type="text" class="header-input input-whatsapp input-select" placeholder="Отправить в WhatsApp"> -->
-            <input id="maskPhone" type="text" class="header-input" name="phone" placeholder="Введите Ваш телефон">
+            <div class="wrap-input-phone">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <input type="text" class="header-input" name="phone" placeholder="Введите Ваш телефон">
+            </div>
             <button class="button header-btn form-btn">
               Рассчитать прирост
               <img src="images/header/clipboard.png" alt="Рассчитать стоимость">
@@ -564,7 +578,10 @@
               <input type="text" class="header-input input-select input-select" placeholder="Выберите модель">
               <input type="text" class="header-input input-select input-select" placeholder="Выберите вид топлива"> -->
               <div class="select">
-                <select name="auto">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <select class="sel" name="auto">
                   <option selected disabled>Выберите марку автомобиля</option>
                   <option value="Audi">Audi</option>
                   <option value="BMW">BMW</option>
@@ -609,13 +626,19 @@
                 </select>
               </div>
               <div class="select">
-                <select disabled name="model">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <select class="sel" disabled name="model">
                   <option selected disabled>Выберите модель</option>
                 </select>
               </div>
 
               <div class="select">
-                <select name="fuel">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <select class="sel" name="fuel">
                   <option selected disabled>Выберите вид топлива</option>
                   <option value="Бензин">Бензин</option>
                   <option value="Дизель">Дизель</option>
@@ -625,8 +648,12 @@
               <div class="header-form-calculation">
                 Запишитесь на чип тюнинг:
               </div>
-              <!-- <input type="text" class="header-input input-whatsapp input-select input-select" placeholder="Отправить в WhatsApp"> -->
-              <input type="text" class="header-input" name="phone" placeholder="Введите Ваш телефон">
+              <div class="wrap-input-phone">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <input type="text" class="header-input" name="phone" placeholder="Введите Ваш телефон">
+              </div>
               <button class="button header-btn form-btn">
                 Рассчитать прирост
                 <img src="images/header/clipboard.png" alt="Рассчитать стоимость">
@@ -777,7 +804,10 @@
             <input type="text" class="cost-input input-select" placeholder="Выберите модель">
             <input type="text" class="cost-input input-select" placeholder="Выберите вид топлива"> -->
             <div class="select">
-              <select name="auto">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <select class="sel" name="auto">
                 <option selected disabled>Выберите марку автомобиля</option>
                 <option value="Audi">Audi</option>
                 <option value="BMW">BMW</option>
@@ -822,20 +852,32 @@
               </select>
             </div>
             <div class="select">
-              <select disabled name="model">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <select class="sel" disabled name="model">
                 <option selected disabled>Выберите модель</option>
               </select>
             </div>
 
             <div class="select">
-              <select name="fuel">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <select class="sel" name="fuel">
                 <option selected disabled>Выберите вид топлива</option>
                 <option value="Бензин">Бензин</option>
                 <option value="Дизель">Дизель</option>
               </select>
             </div>
 
-            <input type="text" class="cost-input" name="phone" placeholder="Введите Ваш телефон">
+            <div class="wrap-input-phone">
+              <div class="error-block">
+                Заполните поле
+              </div>
+              <input type="text" class="cost-input" name="phone" placeholder="Введите Ваш телефон">
+            </div>
+            
             <button class="button cost-btn form-btn">
               Получить прайс
               <img src="images/cost/Clipboard-Office.png" alt="Получить прайс">
@@ -1108,7 +1150,10 @@
               <input type="text" class="test-drive-input input-select" placeholder="Выберите вид топлива"> -->
 
               <div class="select">
-                <select name="auto">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <select class="sel" name="auto">
                   <option selected disabled>Выберите марку автомобиля</option>
                   <option value="Audi">Audi</option>
                   <option value="BMW">BMW</option>
@@ -1153,20 +1198,32 @@
                 </select>
               </div>
               <div class="select">
-                <select disabled name="model">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <select class="sel" disabled name="model">
                   <option selected disabled>Выберите модель</option>
                 </select>
               </div>
 
               <div class="select">
-                <select name="fuel">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <select class="sel" name="fuel">
                   <option selected disabled>Выберите вид топлива</option>
                   <option value="Бензин">Бензин</option>
                   <option value="Дизель">Дизель</option>
                 </select>
               </div>
 
-              <input type="text" class="test-drive-input" name="phone" placeholder="Введите Ваш телефон">
+              <div class="wrap-input-phone">
+                <div class="error-block">
+                  Заполните поле
+                </div>
+                <input type="text" class="test-drive-input" name="phone" placeholder="Введите Ваш телефон">
+              </div>
+              
               <button class="button test-drive-btn form-btn">
                 Попробовать<br>чип тюнинг бесплатно
               </button>

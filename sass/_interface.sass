@@ -32,6 +32,8 @@ p
   transition: 0.3s
   &:hover
     box-shadow: inset 0 6px 5px #720500
+  img
+    pointer-events: none
 
 // Настройки инпутов
 input
@@ -40,13 +42,17 @@ input
   border: none
   background-color: #fff
   &::placeholder
-    font-size: 12px
+    font-size: 14px
     +light
     color: #000000
 .input-select::placeholder
   background: url(../images/cost/arrow-down.png) no-repeat right
+input[type="text"]::placeholder
+  font-size: 14px
 
 // Настройки select
+.wrap-input-phone
+  position: relative
 .select
   position: relative
   width: 100%
@@ -75,3 +81,36 @@ input
     width: 12px
     height: 8px
     z-index: 1000
+.error-block
+  display: none
+  position: absolute
+  text-align: center
+  padding: 8px 0
+  border-radius: 10px
+  box-shadow: 0 0px 5px $red
+  font-size: 14px
+  top: -35px
+  left: 50%
+  transform: translateX(-50%)
+  min-width: 145px
+  max-width: 150px
+  background-color: #fff
+  color: $red
+  z-index: 100
+  &:before
+    position: absolute
+    content: ''
+    display: block
+    box-shadow: 1px 1px 1px $red
+    width: 10px
+    height: 10px
+    background-color: #fff
+    bottom: -5px
+    left: 50%
+    transform: translateX(-50%) rotate(45deg)
+.error-active
+  display: block
+  animation: errorIn 1.5s cubic-bezier(0.33, 0.08, 0.18, 1.14)
+.error-out
+  display: block
+  animation: errorOut 1.2s cubic-bezier(0.33, 0.08, 0.18, 1.14)

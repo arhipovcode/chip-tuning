@@ -45,16 +45,14 @@ const avtoObj = {
   other: [],
 };
 
-function getAuto() {
-  for(let i = 0; i < selectAutos.length; i++) {
-    selectAutos[i].addEventListener('change', (e) => {
-      let target = e.target;
-      if(target === selectAutos[i]) {
-        selectModels[i].removeAttribute("disabled");
-        getModel(selectAutos[i].value.toLowerCase().replace(/\s+/g, ''), selectModels[i]);
-      }
-    });
-  }
+for(let i = 0; i < selectAutos.length; i++) {
+  selectAutos[i].addEventListener('change', (e) => {
+    let target = e.target;
+    if(target === selectAutos[i]) {
+      selectModels[i].removeAttribute("disabled");
+      getModel(selectAutos[i].value.toLowerCase().replace(/\s+/g, ''), selectModels[i]);
+    }
+  });
 }
 
 function getModel(auto, blockModel) {
@@ -72,7 +70,6 @@ function getModel(auto, blockModel) {
   }
 }
 
-getAuto();
 
 // Маска для телефона
 let inputsPhone = document.querySelectorAll('input[name="phone"]');
@@ -80,16 +77,41 @@ $(inputsPhone).mask("+7 (999) 99-99-999");
 
 // Кнопка отправки формы
 let btnsSubmit = document.querySelectorAll('.form-btn');
+let forms = document.querySelectorAll('form');
 
 for(let i = 0; i < btnsSubmit.length; i++) {
   btnsSubmit[i].addEventListener('click', (e) => {
     e.preventDefault();
     let target = e.target;
 
-    if(selectAutos[i].value == selectAutos[i][0].value || selectModels[i].value == selectModels[i][0].value || inputsFuel[i].value == inputsFuel[i][0].value || inputsPhone[i].value == '') {
-      console.log('Заполните поле')
-    } else {
-      console.log('все прошло успешно')
+    if(target == btnsSubmit[i]) {
+      let inputs = forms[i].querySelectorAll('.sel');
+      let formInp = forms[i].querySelector('input[name="phone"]');
+      let errorBlocks = forms[i].querySelectorAll('.error-block');
+
+      if(formInp.value == '') {
+        errorBlocks[3].classList.add('error-active');
+        setTimeout(() => {
+          errorBlocks[3].classList.remove('error-active');
+          errorBlocks[3].classList.add('error-out');
+        }, 1500);
+        setTimeout(() => {
+          errorBlocks[3].classList.remove('error-out');
+        }, 2700);
+      }
+
+      for(let i = 0; i < inputs.length; i++) {
+        if(inputs[i].value == inputs[i][0].value) {
+          errorBlocks[i].classList.add('error-active');
+          setTimeout(() => {
+            errorBlocks[i].classList.remove('error-active');
+            errorBlocks[i].classList.add('error-out');
+          }, 1500);
+          setTimeout(() => {
+            errorBlocks[i].classList.remove('error-out');
+          }, 2700);
+        }
+      }
     }
   });
 }
