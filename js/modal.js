@@ -17,6 +17,10 @@ modalLinks.forEach((el) => {
   });
 });
 
+modalLink.addEventListener('click', (e) => {
+  e.preventDefault();
+});
+
 closedBtn.addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => {
   if(e.target === modal) {

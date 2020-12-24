@@ -844,6 +844,8 @@ input[type="text"]::placeholder {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #fff;
+          box-shadow: 0 0 5px #fff;
   width: 700px;
   padding: 15px 25px 0 25px;
   background: url(../images/factory/block-bg.jpg) no-repeat center;
@@ -857,7 +859,7 @@ input[type="text"]::placeholder {
 
 .modal-content span {
   display: block;
-  width: 83px;
+  width: 60px;
   height: 2px;
   background-color: #feb333;
   margin-right: 20px;
@@ -907,6 +909,7 @@ input[type="text"]::placeholder {
 .modal-policy__link {
   display: block;
   margin-top: 3px;
+  font-size: 14px;
   color: #e60200;
 }
 
@@ -2861,6 +2864,12 @@ body {
   .button {
     padding: 17px 21px;
   }
+  .modal {
+    width: 70%;
+  }
+  .modal-form-btn {
+    padding: 15px 18px;
+  }
   .viber {
     margin: 0 5px;
   }
@@ -3372,6 +3381,25 @@ body {
   .map .map-viber {
     margin: 5px 0;
   }
+  .modal {
+    width: 90%;
+  }
+  .modal-content span {
+    width: 40px;
+  }
+  .modal-title {
+    margin-bottom: 20px;
+  }
+  .modal-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .modal-text p:first-child {
+    font-size: 20px;
+  }
+  .modal-form {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3521,6 +3549,38 @@ body {
   .contacts-title {
     margin: 0 auto 40px;
     max-width: 320px;
+  }
+  .modal {
+    text-align: center;
+    padding: 25px 20px;
+    width: 300px;
+  }
+  .modal-title {
+    font-size: 14px;
+  }
+  .modal-text {
+    font-size: 14px;
+  }
+  .modal-text p:first-child {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .modal-left-block {
+    width: 100%;
+  }
+  .modal-right-block {
+    display: none;
+  }
+  .modal-form {
+    margin-bottom: 30px;
+  }
+  .modal-policy {
+    margin-bottom: 0;
+  }
+  .closed {
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
   }
 }
 
