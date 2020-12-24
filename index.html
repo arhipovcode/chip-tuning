@@ -242,7 +242,7 @@
               и мощности авто без механического
               вмешательства.
             </p>
-            <a href="#" class="block-link">Подробнее <img src="images/services/right-arrow.svg" alt="Подробнее"></a>
+            <a href="#" class="block-link modal-link">Подробнее <img src="images/services/right-arrow.svg" alt="Подробнее"></a>
           </div>
           <div class="services-wrapper-block">
             <div class="block-title">Перевод на EURO2</div>
@@ -252,7 +252,7 @@
               аварийный режим ценой, в 10 и более раз ниже
               стоимости замены фильтра на базовых СТО.
             </p>
-            <a href="#" class="block-link">Получить консультацию <img src="images/services/right-arrow.svg"
+            <a href="#" class="block-link modal-link">Получить консультацию <img src="images/services/right-arrow.svg"
                 alt="Подробнее"></a>
           </div>
           <div class="services-wrapper-block">
@@ -263,7 +263,7 @@
               аварийный режим ценой, в 10 и более раз ниже
               стоимости замены фильтра на базовых СТО.
             </p>
-            <a href="#" class="block-link">Получить консультацию <img src="images/services/right-arrow.svg"
+            <a href="#" class="block-link modal-link">Получить консультацию <img src="images/services/right-arrow.svg"
                 alt="Подробнее"></a>
           </div>
           <div class="services-wrapper-block">
@@ -273,7 +273,7 @@
               клапана, приводящей к выводу авто в
               аварийный режим
             </p>
-            <a href="#" class="block-link">Получить консультацию <img src="images/services/right-arrow.svg"
+            <a href="#" class="block-link modal-link">Получить консультацию <img src="images/services/right-arrow.svg"
                 alt="Подробнее"></a>
           </div>
         </div>
@@ -722,7 +722,7 @@
                 </div>
               </div>
 
-              <button class="button result-btn">
+              <button class="button result-btn modal-link">
                 ЗАКАЗАТЬ ЧИП-ТЮНИНГ
               </button>
             </div>
@@ -778,7 +778,7 @@
                 </div>
               </div>
 
-              <button class="button result-btn">
+              <button class="button result-btn modal-link">
                 ЗАКАЗАТЬ ЧИП-ТЮНИНГ
               </button>
             </div>
@@ -1247,9 +1247,9 @@
       </h2>
     </section>
 
-    <section class="map">
+    <div class="map">
       <div class="map-block">
-        <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abd28b5d78cb8b05fa63061d32c77ac08b120de2d329fc23652b58429d7b0ba22&amp;source=constructor" width="100%" height="554" frameborder="0"></iframe>
+        <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abd28b5d78cb8b05fa63061d32c77ac08b120de2d329fc23652b58429d7b0ba22&amp;source=constructor"></iframe>
 
         <div class="container">
           <div class="map-block-contacts">
@@ -1302,8 +1302,8 @@
               </div>
               <div class="map-block-contacts-item_text">
                 <span>Почта:</span>
-                <a href="mailto:info@ paradigma.website" class="map-block-contacts-mail">
-                  info@ paradigma.website
+                <a href="mailto:info@paradigma.website" class="map-block-contacts-mail">
+                  info@paradigma.website
                 </a>
               </div>
             </div>
@@ -1329,7 +1329,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -1359,12 +1359,52 @@
     </div>
   </footer>
 
+  <div class="modal-wrap">
+    <div class="modal">
+      <span class="closed">&#10008;</span>
+      <div class="modal-left-block">
+        <div class="modal-content">
+          <div class="modal-title">
+            <span></span>
+            С Вами свяжется
+          </div>
+          <div class="modal-text">
+            <p>Андрей</p>
+            <p>Специалист компании</p>
+          </div>
+        </div>
+
+        <form action="#" class="modal-form">
+          <div class="wrap-input-phone">
+            <div class="error-block">
+              Заполните поле
+            </div>
+            <input type="text" class="test-drive-input mod-form-inp" name="phone" placeholder="Введите Ваш телефон">
+          </div>
+
+          <button class="button modal-form-btn">
+            Получить консультацию
+          </button>
+        </form>
+
+        <div class="modal-policy">
+          Оставляя заявку вы соглашаетесь с
+          <a href="#" class="modal-policy__link">
+            Политикой конфиденциальности
+          </a>
+        </div>
+      </div>
+      <div class="modal-right-block"></div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/tab.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/mySlick.js"></script>
   <script src="js/list.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
