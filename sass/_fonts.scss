@@ -54,12 +54,11 @@
 }
 
 @font-face {
-  font-family: 'Progress';
-  src: url('../fonts/Progress-BoldItalic.eot');
-  src: url('../fonts/Progress-BoldItalic.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Progress-BoldItalic.woff2') format('woff2'),
-      url('../fonts/Progress-BoldItalic.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Neubau Pro';
+  src: local('Neubau Pro Bold Italic'), local('Neubau-Pro-Bold-Italic'),
+      url('../fonts/NeubauPro-BoldItalic.woff2') format('woff2'),
+      url('../fonts/NeubauPro-BoldItalic.woff') format('woff'),
+      url('../fonts/NeubauPro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
   font-style: italic;
-  font-display: swap;
 }

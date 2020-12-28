@@ -4,21 +4,23 @@ let modErrorBlock = document.querySelector('.modal-form .error-block');
 let modal = document.querySelector('.modal-wrap');
 let closedBtn = document.querySelector('.closed');
 let modalLinks = document.querySelectorAll('.modal-link');
-let modalLink = document.querySelector('.modal-policy__link');
+let policyLinks = document.querySelectorAll('.block-policy-link');
 let body = document.querySelector('body');
 
 modalLinks.forEach((el) => {
   el.addEventListener('click', (e) => {
     e.preventDefault();
 
-    body.style.overflowY = 'hidden';
+    body.style.overflow = 'hidden';
     modal.classList.remove('fadeOut');
     modal.classList.add('modal-active', 'animated', 'fadeIn');
   });
 });
 
-modalLink.addEventListener('click', (e) => {
-  e.preventDefault();
+policyLinks.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+  })
 });
 
 closedBtn.addEventListener('click', closeModal);
@@ -29,7 +31,7 @@ modal.addEventListener('click', (e) => {
 });
 
 function closeModal() {
-  body.style.overflowY = 'initial';
+  body.style.overflow = 'initial';
   modal.classList.add('fadeOut');
   setTimeout(() => {
     modal.classList.remove('modal-active','fadeIn');
